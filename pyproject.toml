@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tapkofon"
+version = "1.0.0"
+description = ""
+authors = ["Daniel <D4n13l3k00@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+emoji = "^2.11.0"
+fastapi = "^0.110.1"
+pillow = "^10.3.0"
+pydantic = "^2.7.0"
+pydub = "^0.25.1"
+SpeechRecognition = "^3.10.3"
+Telethon = "^1.34.0"
+uvicorn = "^0.29.0"
+toml = "^0.10.2"
+Jinja2 = "^3.1.3"
+python-multipart = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.0"
+isort = "^5.13.2"
+ruff = "^0.3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
