@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 👞 Tapkofon Fix Dockerfile
+# 👞 Tapkofon Fix
 
 ![Telegram](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram)
 ![CodeStyle](https://img.shields.io/badge/code%20style-black-black)
@@ -11,7 +11,7 @@
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=active+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=resolved+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
 
-### !!!Данный форк чинит конфиг Dockerfile, что исправляет ошибку при сборке контейнера; других изменений внесено не было!!!
+### !!!Данный форк чинит конфиг Dockerfile, что исправляет ошибку при сборке контейнера; Исправляется main.py, что обеспечивает совместимость с контейнерами goorm.io (бесплатная альтернатива Okteto). Другие изменения не вносились!!!
 
 ### Представляю вам свой мини-проект **Tapkofon** - минималистичный веб-клиент Telegram'а на Telethon, FastAPI, сделанный преимущественно для кнопочных телефонов
 
@@ -44,7 +44,7 @@
 ## 🔝 Быстрый старт
 
 ```bash
-git clone https://github.com/D4n13l3k00/tapkofon
+git clone https://github.com/Elux414/tapkofon_fix
 cd tapkofon
 apt install python3 python3-venv python3-pip python3-setuptools ffmpeg -y
 chmod +x *.sh
@@ -63,7 +63,7 @@ chmod +x *.sh
 Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/D4n13l3k00/tapkofon
+git clone https://github.com/Elux414/tapkofon_fix
 cd tapkofon
 ```
 
@@ -96,6 +96,54 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 Можно использовать docker-compose: `docker-compose up -d`
 
 P.S: доступен деплой на [Okteto](https://cloud.okteto.com/#/deploy?repository=https://github.com/D4n13l3k00/tapkofon) P.S2: Бесплатно не развернёте, нужны деньги :(
+
+### АЛЬТЕРНАТИВА OKTETO
+
+Имеется возможность развернуть tapkofon на [goorm.io](https://www.goorm.io/dashboard)
+
+1. Перейдите по ссылке
+2. Зарегистрируйте аккаунт
+3. Перейдите в раздел IDE
+4. Создайте контейнер на базе Ubuntu 20.04 LTS (Stack выбирайте "Python")
+5. Склонируйте репозиторий:
+   ```bash
+   git clone https://github.com/Elux414/tapkofon_fix
+   ```
+   
+6. Выполните:
+   ```bash
+   cd tapkofon
+   ```
+   
+7. Выполните установку ffmpeg:
+   ```bash
+   apt install ffmpeg -y
+   ```
+
+8. Установите зависимости:
+   ```bash
+   python3 -m pip install -r requirements.txt
+   
+9. На всякий случай можете выполнить команду:
+   ```bash
+   pip install uvicorn
+   ```
+   
+10. Далее выполните:
+   ```bash
+   cd tapkofon
+   ```
+
+11. И наконец:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8000
+   ```
+
+12. В интерфейсе выберете Container -> Running URL and Port
+
+Указываете любую ссылку, порт указываете 8000. После проделанных манипуляций перейдите по своей ссылке, которую указывали.
+
+Profit! Всё должно работать, однако помните о том, что за работу списывается 2.25 кредита в час, так что останавливайте контейнер, если не пользуетесь им. Если найдёте аналог такой же бесплатный и более лучший, то сообщите об этом :)
 
 ### P.S 🤫
 
