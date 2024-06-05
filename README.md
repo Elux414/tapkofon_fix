@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 👞 Tapkofon
+# 👞 Tapkofon Fix Dockerfile
 
 ![Telegram](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram)
 ![CodeStyle](https://img.shields.io/badge/code%20style-black-black)
@@ -10,6 +10,8 @@
 
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=active+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=resolved+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
+
+### !!!Данный форк чинит конфиг Dockerfile, что исправляет ошибку при сборке контейнера; других изменений внесено не было!!!
 
 ### Представляю вам свой мини-проект **Tapkofon** - минималистичный веб-клиент Telegram'а на Telethon, FastAPI, сделанный преимущественно для кнопочных телефонов
 
@@ -93,7 +95,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 Можно использовать docker-compose: `docker-compose up -d`
 
-P.S: доступен деплой на [Okteto](https://cloud.okteto.com/#/deploy?repository=https://github.com/D4n13l3k00/tapkofon)
+P.S: доступен деплой на [Okteto](https://cloud.okteto.com/#/deploy?repository=https://github.com/D4n13l3k00/tapkofon) P.S2: Бесплатно не развернёте, нужны деньги :(
 
 ### P.S 🤫
 
