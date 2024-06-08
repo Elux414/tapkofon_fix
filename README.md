@@ -98,7 +98,7 @@ Profit! Том для сессий создается автоматически
 
 Создаём volume для сохранения сессии: `docker volume create tapik-session` (уже неактуально, volume создается автоматически сам)
 
-Запуск: `docker run -itd -p 8888:8888 -v tapik-session:/root/session tapik`
+Запуск: `docker run --name=tapik -itd -p 8888:8888 tapik`
 
 Можно использовать docker-compose: `docker-compose up -d`
 
