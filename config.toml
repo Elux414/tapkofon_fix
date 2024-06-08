@@ -1,0 +1,11 @@
+api_id = 8
+api_hash = "7245de8e747a0d6fbe11f7cc14fcc0bb"
+passwd = ""
+pic_quality = 80
+pic_max_size = 256
+pic_format = "jpeg"
+pic_avatar_max_size = 256
+msg_regex_tme = true
+msg_replace_regex = "(https?://)?t\\.me/(?P<chat>[A-Za-z0-9-_]{3,20})/?\\d*"
+msg_regex_to = "/chat/\\g<chat>"
+recognize_lang = "ru-RU"
