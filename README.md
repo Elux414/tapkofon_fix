@@ -11,7 +11,7 @@
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=active+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/D4n13l3k00/tapkofon.svg/?label=resolved+issues&token=zBpkbE5y6_lXYxJ6RtPVrJQ1)](https://deepsource.io/gh/D4n13l3k00/tapkofon/?ref=repository-badge)
 
-###!!!!!ЕСТЬ ВЕРОЯТНОСТЬ ВЫЛЕТЕТЬ НА ВСЕХ УСТРОЙСТВАХ ИЗ АККАУНТА ПРИ ОТПРАВКЕ СООБЩЕНИЯ, ИСПОЛЬЗУЯ TAPKOFON ВЫ ПРИНИМАЕТЕ ВСЕ ВОЗМОЖНЫЕ РИСКИ!!!!!
+### !!!!!ЕСТЬ ВЕРОЯТНОСТЬ ВЫЛЕТЕТЬ НА ВСЕХ УСТРОЙСТВАХ ИЗ АККАУНТА ПРИ ОТПРАВКЕ СООБЩЕНИЯ, ИСПОЛЬЗУЯ TAPKOFON ВЫ ПРИНИМАЕТЕ ВСЕ ВОЗМОЖНЫЕ РИСКИ!!!!!
 В ходе тестирования был выявлен вылет из аккаунта на всех устройствах, помогло зайти только с другого устройства в аккаунт. Вылет произошёл после отправки сообщения в беседу. Пока неизвестно виноват ли в этом tapkofon однозначно, но будьте начеку.
 
 ### !!!Данный форк чинит конфиг Dockerfile, что исправляет ошибку при сборке контейнера (+ совместимость для разворачивания на [Render](https://render.com/); Исправляется main.py, что обеспечивает совместимость с контейнерами goorm.io (бесплатная альтернатива Okteto). Другие изменения не вносились!!!
